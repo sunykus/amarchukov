@@ -18,8 +18,7 @@ public class Point {
         return this.y;
     }
 
-
     public boolean is(int a, int b) {
-       return y == a * x + b;
-        }
+        return y == x * a + b;
+    }
 }
