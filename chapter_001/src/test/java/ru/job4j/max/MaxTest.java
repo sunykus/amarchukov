@@ -13,4 +13,13 @@ public class MaxTest {
 		int expected = 8;
 		assertThat(result, is(expected));
 	}
+	@Test
+	public  void max() {
+		Max maxi = new Max();
+		int result = maxi.max(5, 11, 4);
+		int expected = 11;
+		assertThat(result, is(expected));
+	}
+
+
 }
