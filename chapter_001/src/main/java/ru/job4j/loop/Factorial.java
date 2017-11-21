@@ -8,8 +8,6 @@ public class Factorial {
             for (int i = 1; i <= n; i++) {
                 x *= i;
             }
-        } else {
-            x = 1;
         }
         return x;
     }
