@@ -18,7 +18,7 @@ public class FactorialTest {
     public void whenCalculateFactorialForZeroThenOne() {
         Factorial factorial = new Factorial();
         int result = factorial.calc(0);
-        int expected = 12;
+        int expected = 1;
         assertThat(result, is(expected));
     }
 }
