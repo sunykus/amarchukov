@@ -10,7 +10,8 @@ public class PaintTest {
     public void whenPiramidWithHeightTwoThenStringWithTwoRows() {
         Paint paint = new Paint();
         String result = paint.piramid(2);
-        String expected = String.format(" ^ %s^^^%s", System.getProperty("line.separator"));
+        final String line = System.getProperty("line.separator");
+        String expected = String.format(" ^ %s^^^%s", line, line);
         assertThat(result, is(expected));
     }
 
@@ -20,7 +21,8 @@ public class PaintTest {
 
         Paint paint = new Paint();
         String result = paint.piramid(3);
-        String expected = String.format("  ^  %s ^^^ %s^^^^^%s", System.getProperty("line.separator"));
+        final String line = System.getProperty("line.separator");
+        String expected = String.format("  ^  %s ^^^ %s^^^^^%s", line, line, line);
         assertThat(result, is(expected));
 
     }
