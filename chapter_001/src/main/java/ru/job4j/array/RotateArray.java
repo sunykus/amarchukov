@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
- public class RotateArray {
-     public static void main(String[] argv)
+// public class RotateArray {
+ /*    public static void main(String[] argv)
      {
          int m = 6;
          int[][] A = new int[m][m];
@@ -47,3 +47,4 @@ package ru.job4j.array;
          }
      }
  }
+*/
