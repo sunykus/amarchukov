@@ -1,20 +1,14 @@
 package ru.job4j.array;
 
-import java.util.Arrays;
-
 public class Matrix {
-    public static void main(String[] args) {
+    public int[][] multiple(int size) {
 
-
-        int[][] multiple = new int[9][9];
-            int size = 9;
-            for (int k = 1; k < size; k++) {
-                for (int j = 1; j < k; j++) {
-                    multiple[k][j] = k * j;
-
-                }
+        int[][] massive = new int[size][size];
+        for (int k = 0; k < massive.length; k++) {
+            for (int j = 0; j < massive.length; j++) {
+                massive[k][j] = (k + 1) * (j + 1);
             }
-            System.out.println(Arrays.deepToString(multiple));
-
         }
+        return massive;
     }
+}
